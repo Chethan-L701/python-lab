@@ -41,9 +41,11 @@ YSquSum = sumation(map(lambda y: y*y, Y))
 XY = list(map(lambda x, y: x*y, X, Y))
 XYSum = sumation(XY)
 corr = correlation(XYSum, XSquSum, YSquSum)
+
 for i in range(n):
     print("{}\t{}\t{}\t{}\t{}\t{}\t{}"
           .format(x[i], y[i], X[i], Y[i], XY[i], X[i]**2, Y[i]**2))
+
 print("x mean = {}".format(xmean))
 print("y mean = {}".format(ymean))
 print("X sum = {}".format(XSum))
