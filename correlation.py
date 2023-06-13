@@ -2,8 +2,7 @@ import math
 
 x = []
 y = []
-print("Enter the number of data sets ")
-n = int(input())
+n = int(input("Enter the number of x,y pair (value of n): "))
 for i in range(n):
     print("Enter the data set ", i+1)
     x.append(int(input("x{}: ".format(i+1))))
