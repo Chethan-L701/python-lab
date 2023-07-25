@@ -6,7 +6,7 @@ def binary_to_decimal(n: int) -> int:
         if num not in [0, 1]:
             print("Invalid input")
             return -1
-        decimal += (num) * 2 ** i
+        decimal += (num) * (2 ** i)
         n //= 10
         i += 1
     return decimal
@@ -20,7 +20,7 @@ def octal_to_decimal(n):
         if num not in [0, 1, 2, 3, 4, 5, 6, 7]:
             print("Invalid input")
             return -1
-        decimal += (num) * 8 ** i
+        decimal += (num) * (8 ** i)
         n //= 10
         i += 1
     return decimal
@@ -34,3 +34,9 @@ def octal_to_hexa(n):
         hex = str(li[dec % 16]) + hex
         dec = dec // 16
     return hex
+
+bin = int(input("Enter the binary number : "));
+print(f"The binary number {bin} = {binary_to_decimal(bin)} in decimal system.")
+
+oct = int(input("Enter the octal number :"))
+print(f"The octal number {oct} = {octal_to_decimal(oct)} in decimals = {octal_to_hexa(oct)} in hexadecimal")
